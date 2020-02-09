@@ -1119,6 +1119,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="IC1" library="lm1117" deviceset="LM1117?-*" device="MP" technology="3.3"/>
 <part name="D1" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" deviceset="MBR0520LT1G" device="" package3d_urn="urn:adsk.eagle:package:10898395/2" value="STPS1L60ZFY"/>
 <part name="A1" library="ESP32-WROVER-I" deviceset="ESP32-WROVER-I" device=""/>
+<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="12KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -1144,6 +1145,10 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <instance part="A1" gate="G$1" x="33.02" y="33.02" smashed="yes">
 <attribute name="NAME" x="20.2891" y="53.4139" size="1.782309375" layer="95"/>
 <attribute name="VALUE" x="20.284" y="-0.0902" size="1.78303125" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="68.58" y="43.18" smashed="yes">
+<attribute name="NAME" x="68.58" y="44.704" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="68.58" y="41.656" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -1189,6 +1194,62 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="17.78" y1="86.36" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="12.7" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="IO18"/>
+<wire x1="48.26" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
+<label x="63.5" y="30.48" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="IO19"/>
+<wire x1="48.26" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<label x="53.34" y="33.02" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="IO23"/>
+<wire x1="48.26" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<label x="63.5" y="48.26" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="CS0" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="IO5"/>
+<wire x1="48.26" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<label x="53.34" y="27.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RX0" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="RXD0"/>
+<wire x1="48.26" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<label x="53.34" y="40.64" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="TXD0"/>
+<wire x1="48.26" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="TX0" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
+<label x="76.2" y="43.18" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GPIO21" class="0">
+<segment>
+<pinref part="A1" gate="G$1" pin="IO21"/>
+<wire x1="48.26" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
+<label x="63.5" y="38.1" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
