@@ -1,0 +1,8 @@
+//Note: **word** references unfinalized information
+
+The purpose of this board is to complement pre-existing ring LED with an arced shape. 
+This should support several other fixtures with it's small form factor and **16W** onboard power delivey
+
+Board has USB **Type-C** connector for power and firmware uploading port. Board uses **CP2101N** USB-to-UART Bridge
+
+**Rather than dedicated level shifting, LED outputs are 'buffered' by initial WS2812b

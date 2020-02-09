@@ -1,0 +1,28 @@
+//David
+Amazon server
+Switch to esp32
+
+4 90 Degree, 1cm buttons have default values, changeable in-app
+Defaults:
+ -on/off
+ -palette
+  -Speed can be set in app
+ -animation
+ -randomize/autoplay
+
+USB will not be main power source
+
+For desk lamp, capacitive touch buttons
+ -Banana for capacitive surface
+
+Make dev/pro version with usb hardware and extra level shifting
+-Uses smaller level shifter
+
+Compliant with header design, optional thorugh hole headers to allow power distro board to plug in
+
+Brain board with holes to solder wires to
+-Can also use thorughmale power distro with
+
+8 **or 16** outputs for power
+
+neopixel for indicator **maybe 4**

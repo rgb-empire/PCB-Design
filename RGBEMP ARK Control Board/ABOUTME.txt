@@ -1,0 +1,11 @@
+//Notational Note: **word** references unfinalized information
+
+The purpose of this board is to complement pre-existing ring LED with an arced shape. 
+This should support several other fixtures with it's small form factor and **16W** onboard power delivey
+
+Board has USB **Type-C** connector for power and firmware uploading port. Board uses **CP2101N** USB-to-UART Bridge
+
+**Rather than dedicated level shifting, LED outputs are 'buffered'
+
+If board is being assembled by hand, must be capable of soldering 0603 passives, as well the large 8266 module.
+This is recommended to be done with a rework station rather than a conventional iron.
